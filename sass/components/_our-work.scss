@@ -1,0 +1,67 @@
+.our-work {
+  justify-content: center;
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 94px;
+}
+.head2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0px;
+  line-height: 1.16;
+}
+.studio-images img {
+  width: 370px;
+  height: 294px;
+}
+.studio-images {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.box1 {
+  margin-right: 30px;
+  height: 294px;
+  position: relative;
+  z-index: 1;
+}
+.box2 {
+  margin-right: 30px;
+  position: relative;
+  height: 294px;
+  z-index: 1;
+}
+.box3 {
+  position: relative;
+  height: 294px;
+  z-index: 1;
+}
+
+.apps1,
+.apps2,
+.apps3 {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $backgroundColor;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

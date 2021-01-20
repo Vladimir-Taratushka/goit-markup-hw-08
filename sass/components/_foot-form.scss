@@ -1,0 +1,54 @@
+.bottom-form {
+  display: block;
+  margin-left: 93px;
+}
+.foot-form {
+  display: flex;
+}
+.send-letter {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  color: $backgroundColor;
+  background-color: $accentColor;
+  border-radius: 4px;
+  font-family: $titleFont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  align-items: center;
+  margin-left: 12px;
+  justify-content: center;
+}
+.subscribe {
+  top: 13px;
+  left: 138px;
+  width: 24px;
+  height: 24px;
+  fill: $backgroundColor;
+  margin-left: 10px;
+}
+.formspace {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2785px;
+  border: 1px solid $footFormColor;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: $footColor;
+  font-family: $titleFont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding: 15px 16px;
+  color: $backgroundColor;
+}

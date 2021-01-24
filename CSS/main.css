@@ -1,27 +1,27 @@
 @font-face {
   font-family: "Roboto";
-  src: url(../../fonts/Roboto.html);
+  src: url(../../fonts/Roboto.css);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../../fonts/RobotoMedium.html);
+  src: url(../../fonts/RobotoMedium.css);
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../../fonts/Roboto.html);
+  src: url(../../fonts/Roboto.css);
   font-style: bold;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(../../fonts/RobotoBlack.html);
+  src: url(../../fonts/RobotoBlack.css);
   font-style: normal;
   font-weight: 900;
 }
@@ -299,6 +299,8 @@ body {
   padding: 0px;
   margin: 0px;
   width: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 ul {
@@ -317,10 +319,9 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+/*header {
   border: 1px solid #ececec;
 }
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -330,129 +331,223 @@ header {
   padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
+  
+}*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .web-logo {
+    font-family: Raleway;
+    color: #2196f3;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .studio-logo {
+    font-family: Raleway;
+    color: #212121;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .menu-button {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+  }
+  .icon-menu {
+    width: 24px;
+    height: 16px;
+  }
+  .icon-cross {
+    width: 19px;
+    height: 19px;
+  }
+  .menu-button .icon-cross {
+    display: none;
+  }
+  .menu-button.is-open .icon-cross {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  .menu-button:hover .icon-cross {
+    fill: #2196f3;
+  }
+  .menu-button:hover .icon-menu {
+    fill: #2196f3;
+  }
+  .menu-container {
+    position: absolute;
+    display: none;
+    background-color: #f5f4fa;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+  }
+  .menu-container.menu-container.is-open {
+    display: block;
+  }
 }
 
-.nav-links {
-  display: flex;
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    margin-left: 93px;
+  }
+  .nav-links a {
+    position: relative;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-links a::after {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    opacity: 0;
+  }
+  #portfolio-studio a {
+    color: #2196f3;
+  }
+  #portfolio-studio a::after {
+    color: #2196f3;
+    opacity: 1;
+  }
+  .nav-links > li {
+    margin-right: 50px;
+  }
+  .nav-links :hover {
+    color: #2196f3;
+  }
+  .nav-links :focus {
+    color: #2196f3;
+  }
+  .nav-links :last-child {
+    margin-right: 0px;
+  }
 }
 
-.nav-links a {
-  position: relative;
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
 }
 
-.nav-links a::after {
-  position: absolute;
-  top: 44px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196f3;
-  opacity: 0;
+@media screen and (min-width: 768px) {
+  .nav-contacts {
+    display: flex;
+    margin-left: auto;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-contacts :hover,
+  .nav-contacts :focus {
+    fill: #2196f3;
+    color: #2196f3;
+  }
+  .nav-contacts :not(:first-child) {
+    margin-left: 50px;
+  }
+  .nav-contacts a {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .smartphone {
+    display: inline-flex;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+  }
+  .envelope {
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+  }
 }
 
-#portfolio-studio a {
-  color: #2196f3;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .nav-contacts {
+    display: none;
+  }
 }
 
-#portfolio-studio a::after {
-  color: #2196f3;
-  opacity: 1;
-}
-
-.nav-links > li {
-  margin-right: 50px;
-}
-
-.nav-links :hover {
-  color: #2196f3;
-}
-
-.nav-links :focus {
-  color: #2196f3;
-}
-
-.nav-links :last-child {
-  margin-right: 0px;
-}
-
-.nav-contacts {
-  display: flex;
-  margin-left: auto;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-contacts :hover,
-.nav-contacts :focus {
-  fill: #2196f3;
-  color: #2196f3;
-}
-
-.nav-contacts :not(:first-child) {
-  margin-left: 50px;
-}
-
-.nav-contacts a {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.smartphone {
-  display: inline-flex;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
-}
-
-.envelope {
-  display: inline-flex;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  align-items: center;
-  fill: currentColor;
-}
-
-.efective-solution {
-  text-align: center;
-  background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.4)), url(../images/Img1.jpg);
-  max-width: 1600px;
-  justify-content: center;
-  margin: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  padding-bottom: 200px;
-}
-
-.efective-solution > h1 {
-  margin: 0px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .efective-solution {
+    text-align: center;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/Img1.jpg);
+    /*max-width: 1600px;*/
+    max-width: 767px;
+    justify-content: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 118px 60px;
+  }
+  .efective-solution > h1 {
+    /*margin: 0px;
   padding-top: 200px;
   padding-bottom: 30px;
   font-size: 44px;
   font-weight: 700;
   font-style: normal;
   line-height: 1.4;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
 }
 
 .order-service {
@@ -1174,7 +1269,7 @@ footer {
   color: #ffffff;
   background-color: #2196f3;
   border-radius: 4px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1206,7 +1301,7 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: #2f303a;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

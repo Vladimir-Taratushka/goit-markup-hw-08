@@ -7,14 +7,18 @@
     <title>homework-08 </title>
     <link rel="stylesheet" href="./CSS/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./CSS/main.min.css">
 </head>
 
 <body>
     <header>
         <nav class="main-nav">
-             <img src="./images/WebStudio.png" alt="logo">    
+            <div><span class="web-logo">Web </span>
+                 <span class="studio-logo">Studio</span>
+           </div>
+         
             <ul class="nav-links">
                 <li id="portfolio-studio"><a href="index.html"> Студия </a></li>
                 <li><a href="portfolio.html">Портфолио </a></li>
@@ -34,8 +38,19 @@
                     </svg>
                     +38096 111 11 11 </a></li>
             </ul>
-
+            <button type="button" class="menu-button is-open"
+           data-menu-button 
+           aria-expanded="false"> 
+                        <svg width= "24" height="24"
+                        aria-label="Переключатель мобильного меню" >
+                        <use href="./images/icons/sprite3.svg#icon-menu"class="icon-menu"></use>
+                        <use href="./images/icons/sprite3.svg#icon-close"class="icon-cross"></use>
+                    </svg>
+            </button>
+            <div class="menu-container is-open" data-menu>контейнер</div>
         </nav>
+        
+           
     </header>
     <main>
         <section class="efective-solution">
@@ -449,6 +464,7 @@
        </div>
     </footer >
    <script src="./JS/modal.js"></script>
+   <script src="./JS/menu.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-header {
+/*header {
   border: 1px solid #ececec;
 }
 .main-nav {
@@ -10,4 +10,82 @@ header {
   padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
+  
+}*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .web-logo {
+    font-family: Raleway;
+    color: $accentColor;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .studio-logo {
+    font-family: Raleway;
+    color: $headerColor;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .menu-button {
+    padding: 0;
+    margin: 0;
+    background-color: $backgroundColor;
+    border: none;
+    outline: none;
+  }
+  .icon-menu {
+    width: 24px;
+    height: 16px;
+  }
+  .icon-cross {
+    width: 19px;
+    height: 19px;
+  }
+  .menu-button .icon-cross {
+    display: none;
+  }
+  .menu-button.is-open .icon-cross {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
+  .menu-button:hover .icon-cross {
+    fill: $accentColor;
+  }
+  .menu-button:hover .icon-menu {
+    fill: $accentColor;
+  }
+  .menu-container {
+    position: absolute;
+    display: none;
+    background-color: $buttonColor;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    padding: 15px;
+    height: 100%;
+    &.menu-container.is-open {
+      display: block;
+    }
+  }
 }

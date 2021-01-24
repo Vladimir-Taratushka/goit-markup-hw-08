@@ -12,7 +12,7 @@
   color: $backgroundColor;
   background-color: $accentColor;
   border-radius: 4px;
-  font-family: $titleFont;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -42,7 +42,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: $footColor;
-  font-family: $titleFont;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

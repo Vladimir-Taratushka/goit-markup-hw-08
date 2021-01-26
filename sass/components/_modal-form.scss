@@ -1,91 +1,93 @@
-.form-modal {
-  width: 100%;
-  font-family: "Roboto" sans-serif;
-  font-size: 12px;
-  color: $headerColor;
-}
-.form-field {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  position: relative;
-}
-.form-input {
-  display: block;
-  padding: 11px 12px;
-  border: 1px solid;
-  border-radius: 4px;
-  border-color: $inputColor;
-  margin-bottom: 10px;
-  padding-left: 40px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus {
-    outline-color: $accentColor;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-modal {
+    width: 100%;
+    font-family: "Roboto" sans-serif;
+    font-size: 12px;
+    color: $headerColor;
   }
-  &:focus + .tag-tube,
-  &:focus + .tag-man,
-  &:focus + .tag-envelop {
-    fill: $accentColor;
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
   }
-}
-.form-label {
-  margin-bottom: 4px;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  color: $textColor;
-}
-.tag-tube {
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 30px;
-  left: 14px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tag-man {
-  width: 13px;
-  height: 13px;
-  position: absolute;
-  top: 30px;
-  left: 14px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.tag-envelop {
-  width: 15px;
-  height: 12px;
-  position: absolute;
-  top: 30px;
-  left: 14px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.comments {
-  padding: 11px 12px;
-  border: 1px solid $inputColor;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.01em;
-  text-align: left;
-  width: 448px;
-  height: 120px;
-  color: $headerColor;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .form-input {
+    display: block;
+    padding: 11px 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: $inputColor;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &::placeholder {
-    color: $placeholderColor;
+    &:focus {
+      outline-color: $accentColor;
+    }
+    &:focus + .tag-tube,
+    &:focus + .tag-man,
+    &:focus + .tag-envelop {
+      fill: $accentColor;
+    }
+  }
+  .form-label {
+    margin-bottom: 4px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
     text-align: left;
+    color: $textColor;
   }
-  &:focus {
-    outline-color: $accentColor;
+  .tag-tube {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tag-man {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tag-envelop {
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .comments {
+    padding: 11px 12px;
+    border: 1px solid $inputColor;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 370px;
+    height: 120px;
+    color: $headerColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+      color: $placeholderColor;
+      text-align: left;
+    }
+    &:focus {
+      outline-color: $accentColor;
+    }
   }
 }

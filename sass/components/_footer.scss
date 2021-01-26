@@ -1,6 +1,7 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
   footer {
     background-color: $footColor;
+    color: $backgroundColor;
   }
   .footer-links {
     display: flex;
@@ -17,11 +18,11 @@
     display: block;
     text-align: center;
     margin-bottom: 60px;
+    color: $backgroundColor;
   }
-  .footer-social-links {
-    
   .links-title {
     display: block;
+    text-align: center;
     color: $backgroundColor;
     font-family: Roboto;
     font-size: 14px;

@@ -1,4 +1,11 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
   .dignities {
     display: block;
     padding-right: 15px;

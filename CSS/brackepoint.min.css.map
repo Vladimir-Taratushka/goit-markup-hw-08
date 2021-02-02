@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/components/brackepoint.scss"
-    ],
-    "names": [],
-    "file": "brackepoint.min.css"
-}

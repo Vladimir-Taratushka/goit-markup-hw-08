@@ -1,9 +1,12 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio {
+    width: 480px;
     padding-top: 60px;
     padding-bottom: 40px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .portfolio-buttons {
     margin-block-start: 0px;

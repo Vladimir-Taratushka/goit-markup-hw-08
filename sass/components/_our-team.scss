@@ -1,7 +1,10 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .our-team {
+    width: 480px;
     background-color: $buttonColor;
     padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .team {
     font-family: Roboto;

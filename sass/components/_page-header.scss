@@ -125,3 +125,46 @@
     display: flex;
   }
 }
+@media screen and (min-width: 1200px) {
+  header {
+    border: 1px solid #ececec;
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 215px;
+    padding-left: 215px;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .menu-button,
+  .icon-menu,
+  .icon-cross {
+    display: none;
+  }
+  .web-logo {
+    font-family: Raleway;
+    color: $accentColor;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .studio-logo {
+    font-family: Raleway;
+    color: $headerColor;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .menu-container {
+    display: flex;
+  }
+}

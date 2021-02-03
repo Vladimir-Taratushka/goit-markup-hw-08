@@ -44,3 +44,26 @@
     font-family: "Roboto", sans-serif;
   }
 }
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  main {
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+  }
+}

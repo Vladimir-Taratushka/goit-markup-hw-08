@@ -93,7 +93,7 @@
 @media screen and (min-width: 1200px) {
   .nav-contacts {
     display: flex;
-    margin-left: auto;
+    margin-left: 305px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     & :hover,
@@ -103,7 +103,7 @@
     }
   }
   .nav-contacts :not(:first-child) {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .nav-contacts a {
     font-family: "Roboto", sans-serif;
@@ -115,6 +115,7 @@
     color: $textColor;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .smartphone {
     display: inline-flex;
     width: 10px;

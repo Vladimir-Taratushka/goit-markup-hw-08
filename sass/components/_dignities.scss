@@ -113,3 +113,58 @@
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .icon-box {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: $buttonColor;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .antena-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+  }
+  .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-right: 215px;
+    padding-left: 215px;
+  }
+  .dignities {
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .dignities > li {
+    margin-right: 30px;
+  }
+  .dignities :last-child {
+    margin-right: 0px;
+  }
+  .dignities p {
+    text-align: left;
+    width: 270px;
+    color: $textColor;
+    line-height: 1.7;
+    font-size: 14;
+    margin-bottom: 0px;
+  }
+  .dignities span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}

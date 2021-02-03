@@ -127,3 +127,136 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .clients-head {
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-block-start: 0;
+    margin-bottom: 30px;
+  }
+  .clients-tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .clients-tag > li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0px;
+    }
+  }
+  .company-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 226px;
+    height: 90px;
+    border: solid 1px $iconColor;
+    border-radius: 3px;
+    background-color: $backgroundColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      border-color: $accentColor;
+    }
+    & .logo1 :hover,
+    & .logo2 :hover,
+    & .logo3 :hover,
+    & .logo4 :hover,
+    & .logo5 :hover,
+    & .logo6 :hover {
+      fill: $accentColor;
+    }
+
+    &:hover .logo1,
+    &:hover .logo2,
+    &:hover .logo3,
+    &:hover .logo4,
+    &:hover .logo5,
+    &:hover .logo6 {
+      fill: $accentColor;
+    }
+    & .logo1 :focus,
+    & .logo2 :focus,
+    & .logo3 :focus,
+    & .logo4 :focus,
+    & .logo5 :focus,
+    & .logo6 :focus {
+      fill: $accentColor;
+    }
+
+    &:focus .logo1,
+    &:focus .logo2,
+    &:focus .logo3,
+    &:focus .logo4,
+    &:focus .logo5,
+    &:focus .logo6 {
+      fill: $accentColor;
+    }
+  }
+  .clients-tag a:focus {
+    border-color: $accentColor;
+  }
+
+  .logo1 {
+    width: 44px;
+    height: 49px;
+    fill: $iconColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo2 {
+    width: 40px;
+    height: 52px;
+    fill: $iconColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo3 {
+    width: 41px;
+    height: 42px;
+    fill: $iconColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo4 {
+    width: 80px;
+    height: 42px;
+    fill: $iconColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo5 {
+    width: 59px;
+    height: 47px;
+    fill: #afb1b8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .logo6 {
+    width: 88px;
+    height: 45px;
+    fill: $iconColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

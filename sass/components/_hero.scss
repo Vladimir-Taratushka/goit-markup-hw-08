@@ -36,3 +36,41 @@
     margin-block-end: 0;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .efective-solution {
+    text-align: center;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url(../images/img2.jpg);
+    width: 767px;
+
+    height: 400px;
+    justify-content: center;
+    margin: auto;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $backgroundColor;
+    padding: 118px 204px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .efective-solution > h1 {
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}

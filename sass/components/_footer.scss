@@ -152,15 +152,15 @@
   footer {
     background-color: $footColor;
     width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 215px;
+    padding-left: 215px;
   }
   .footer-links {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 215px;
-    padding-left: 215px;
-    width: 1600px;
-    margin: auto;
   }
   .contacts {
     width: 231px;

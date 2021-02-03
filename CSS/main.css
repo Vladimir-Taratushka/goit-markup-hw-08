@@ -390,7 +390,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   body {
     font-family: "Roboto", sans-serif;
     padding: 0px;
@@ -866,10 +866,9 @@ summary {
   .efective-solution {
     text-align: center;
     background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/img2.jpg);
-    max-width: 767px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(/images/Img2.jpg);
+    width: 480px;
     min-width: 480px;
-    height: 400px;
     justify-content: center;
     margin: auto;
     background-size: auto;
@@ -899,9 +898,8 @@ summary {
   .efective-solution {
     text-align: center;
     background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/img2.jpg);
-    width: 767px;
-    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(/images/Img2.jpg);
+    width: 768px;
     justify-content: center;
     margin: auto;
     background-size: auto;
@@ -931,7 +929,7 @@ summary {
   .efective-solution {
     text-align: center;
     background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.4)), url(../images/Img1.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.4)), url(/images/Img2.jpg);
     width: 1600px;
     justify-content: center;
     margin: auto;
@@ -940,6 +938,7 @@ summary {
     background-position: center;
     color: #ffffff;
     padding-bottom: 200px;
+    overflow: hidden;
   }
   .efective-solution > h1 {
     margin: 0px;
@@ -2330,7 +2329,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients {
     width: 1600px;
     margin: auto;
@@ -2602,15 +2601,15 @@ summary {
   footer {
     background-color: #2f303a;
     width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 215px;
+    padding-left: 215px;
   }
   .footer-links {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 215px;
-    padding-left: 215px;
-    width: 1600px;
-    margin: auto;
   }
   .contacts {
     width: 231px;

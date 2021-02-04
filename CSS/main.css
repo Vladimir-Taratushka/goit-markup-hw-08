@@ -866,7 +866,7 @@ summary {
   .efective-solution {
     text-align: center;
     background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/img2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/Img2.jpg);
     width: 480px;
     min-width: 480px;
     justify-content: center;
@@ -898,7 +898,7 @@ summary {
   .efective-solution {
     text-align: center;
     background-color: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/img2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(47, 48, 58, 0.8)), url(../images/Img2.jpg);
     width: 768px;
     justify-content: center;
     margin: auto;

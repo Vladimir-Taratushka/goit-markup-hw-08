@@ -871,13 +871,13 @@ summary {
     min-width: 480px;
     justify-content: center;
     margin: auto;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
     padding: 118px 60px;
     margin-bottom: 60px;
-    position: relative;
+    overflow: hidden;
   }
   .efective-solution > h1 {
     font-family: Roboto;
@@ -902,13 +902,13 @@ summary {
     width: 768px;
     justify-content: center;
     margin: auto;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #ffffff;
     padding: 118px 204px;
     margin-bottom: 60px;
-    position: relative;
+    overflow: hidden;
   }
   .efective-solution > h1 {
     font-family: Roboto;

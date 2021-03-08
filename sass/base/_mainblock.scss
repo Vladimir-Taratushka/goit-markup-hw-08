@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   main {
-    max-width: 767px;
+    width: 480px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -14,7 +14,7 @@
 }
 @media screen and (min-width: 1200px) {
   main {
-    width: 1600px;
+    // width: 1600px;
     margin-right: auto;
     margin-left: auto;
   }

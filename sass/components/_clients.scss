@@ -1,7 +1,8 @@
 @media screen and (max-width: 767px) {
   .clients {
     width: 480px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 60px;
     padding-bottom: 54px;
     align-items: center;
@@ -17,6 +18,8 @@
     line-height: 33px;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-block-start: 0;
+    margin-bottom: 30px;
   }
   .clients-tag {
     display: flex;
@@ -262,12 +265,11 @@
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    width: 1600px;
-    margin: auto;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 94px;
     padding-bottom: 94px;
-    padding-right: 215px;
-    padding-left: 215px;
   }
   .clients-head {
     font-family: Roboto;

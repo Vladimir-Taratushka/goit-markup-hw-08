@@ -45,7 +45,7 @@
         rgba(47, 48, 58, 0.8)
       ),
       url(../images/Img2.jpg);
-    width: 768px;
+    max-width: 768px;
     justify-content: center;
     margin: auto;
     background-size: cover;
@@ -81,7 +81,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/Img2.jpg);
-    width: 1600px;
+    max-width: 1600px;
     justify-content: center;
     margin: auto;
     background-repeat: no-repeat;
